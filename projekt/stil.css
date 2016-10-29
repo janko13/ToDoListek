@@ -1,0 +1,73 @@
+body{
+	background-color:  #b3ff99;	
+}
+
+tabele{
+	border: #004d00 solid 3px;
+}
+
+th{
+	background-color: #006622;
+	border: white solid 1px;
+}
+
+h1 {
+	color: #006622;
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold; 
+}
+
+h2 {
+	color: black;
+	display: block;
+	font-size: 1em;
+	text-align: left;
+	font-weight: bold; 
+}
+
+th{
+	color: white;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color: gray;
+	text-decoration: none;
+}
+a:active{
+	color: black;
+}
+
+#registracija {
+    background-color: white;
+    float: center;
+	padding-top: 25px;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    border: 2px solid #006622;
+}
+
+#nastavitve {
+    background-color: white;
+    float: center;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    border: 2px solid #006622;
+	position: relative;
+	top: 25px;
+}
+
+
+#prijava_meni{
+	position: relative;
+	top: 20px;
+}
