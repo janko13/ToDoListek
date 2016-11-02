@@ -2,13 +2,19 @@ body{
 	background-color:  #b3ff99;	
 }
 
-tabele{
+table{
 	border: #004d00 solid 3px;
+	width: 100%;
+	padding: 0px;
+	border-spacing: 0px;
+    #border-collapse: separate;
 }
 
 th{
+	color: white;
+	padding: 10px;
 	background-color: #006622;
-	border: white solid 1px;
+	border: #004d00 solid 1px;
 }
 
 h1 {
@@ -25,10 +31,6 @@ h2 {
 	font-size: 1em;
 	text-align: left;
 	font-weight: bold; 
-}
-
-th{
-	color: white;
 }
 
 a:link{
@@ -48,6 +50,10 @@ a:active{
 }
 
 #registracija {
+	width: 60%;
+	position: relative;
+	top: 15px;
+	left: 20%;
     background-color: white;
     float: center;
 	padding-top: 25px;
@@ -56,7 +62,61 @@ a:active{
     border: 2px solid #006622;
 }
 
-#nastavitve {
+#pod_meni{
+	width: 70%;
+	position: relative;
+	top: 10px;
+	left: 15%;
+	border: #004d00 solid 1px;
+}
+
+#opravilo1{
+	width: 70%;
+	position: relative;
+	top: 15px;
+	left: 15%;
+	border: black solid 1px;
+}
+
+#opravilo2{
+	width: 70%;
+	position: relative;
+	top: 20px;
+	left: 15%;
+	border: black solid 1px;
+}
+
+#graf{
+	width: 70%;
+	position: relative;
+	top: 15px;
+	left: 15%;
+	border: 1px solid black;
+	background-color: white;
+}
+
+#opravilo3{
+	width: 70%;
+	position: relative;
+	top: 25px;
+	left: 15%;
+	border: black solid 1px;
+}
+
+#pm{
+	padding: 5px;
+	font-weight: normal;
+}
+
+#o{
+	padding: 5px;
+	font-weight: normal;
+	color: black;
+	background-color: white;
+}
+
+#obrazec {
+	width: 70%;
     background-color: white;
     float: center;
     padding-bottom: 25px;
@@ -64,10 +124,18 @@ a:active{
     border: 2px solid #006622;
 	position: relative;
 	top: 25px;
+	left: 15%;
 }
 
 
 #prijava_meni{
 	position: relative;
 	top: 20px;
+}
+
+#naslov_grafa{
+	color: black;
+	font-size: 1em;
+	text-align: center;
+	font-weight: normal; 
 }
