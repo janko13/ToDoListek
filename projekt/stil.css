@@ -46,7 +46,7 @@ a:hover{
 	text-decoration: none;
 }
 a:active{
-	color: black;
+	color: #b3ff99;
 }
 
 #registracija {
@@ -63,6 +63,7 @@ a:active{
 }
 
 #pod_meni{
+	table-layout: fixed;
 	width: 70%;
 	position: relative;
 	top: 10px;
@@ -71,6 +72,7 @@ a:active{
 }
 
 #opravilo1{
+	table-layout: fixed;
 	width: 70%;
 	position: relative;
 	top: 15px;
@@ -79,6 +81,7 @@ a:active{
 }
 
 #opravilo2{
+	table-layout: fixed;
 	width: 70%;
 	position: relative;
 	top: 20px;
@@ -91,11 +94,12 @@ a:active{
 	position: relative;
 	top: 15px;
 	left: 15%;
-	border: 1px solid black;
+	border: 2px solid #004d00;
 	background-color: white;
 }
 
 #opravilo3{
+	table-layout: fixed;
 	width: 70%;
 	position: relative;
 	top: 25px;
@@ -106,6 +110,7 @@ a:active{
 #pm{
 	padding: 5px;
 	font-weight: normal;
+	
 }
 
 #o{
