@@ -49,20 +49,8 @@ a:active{
 	color: #b3ff99;
 }
 
-#registracija {
-	width: 60%;
-	position: relative;
-	top: 15px;
-	left: 20%;
-    background-color: white;
-    float: center;
-	padding-top: 25px;
-    padding-bottom: 25px;
-	padding-left: 50px;
-    border: 2px solid #006622;
-}
 
-#pod_meni{
+.pod_meni{
 	table-layout: fixed;
 	width: 70%;
 	position: relative;
@@ -71,7 +59,7 @@ a:active{
 	border: #004d00 solid 1px;
 }
 
-#opravilo1{
+.opravilo{
 	table-layout: fixed;
 	width: 70%;
 	position: relative;
@@ -80,47 +68,22 @@ a:active{
 	border: black solid 1px;
 }
 
-#opravilo2{
-	table-layout: fixed;
-	width: 70%;
-	position: relative;
-	top: 20px;
-	left: 15%;
-	border: black solid 1px;
-}
 
-#graf{
-	width: 70%;
-	position: relative;
-	top: 15px;
-	left: 15%;
-	border: 2px solid #004d00;
-	background-color: white;
-}
 
-#opravilo3{
-	table-layout: fixed;
-	width: 70%;
-	position: relative;
-	top: 25px;
-	left: 15%;
-	border: black solid 1px;
-}
-
-#pm{
+.pm{
 	padding: 5px;
 	font-weight: normal;
 	
 }
 
-#o{
+.o{
 	padding: 5px;
 	font-weight: normal;
 	color: black;
 	background-color: white;
 }
 
-#obrazec {
+.obrazec {
 	width: 70%;
     background-color: white;
     float: center;
@@ -143,4 +106,26 @@ a:active{
 	font-size: 1em;
 	text-align: center;
 	font-weight: normal; 
+}
+
+#graf{
+	width: 70%;
+	position: relative;
+	top: 15px;
+	left: 15%;
+	border: 2px solid #004d00;
+	background-color: white;
+}
+
+#registracija {
+	width: 60%;
+	position: relative;
+	top: 15px;
+	left: 20%;
+    background-color: white;
+    float: center;
+	padding-top: 25px;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    border: 2px solid #006622;
 }
