@@ -1,5 +1,17 @@
 body{
 	background-color:  #b3ff99;	
+	direction: ltr;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #004d00;
+}
+
+.flex-item {
+    background-color: #006622;
+    margin: 20px;
 }
 
 table{
@@ -32,6 +44,18 @@ h2 {
 	text-align: left;
 	font-weight: bold; 
 }
+
+nav{
+	font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+
+
 
 a:link{
 	color: white;
