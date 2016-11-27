@@ -1,17 +1,10 @@
 body{
 	background-color:  #b3ff99;	
 	direction: ltr;
-}
-
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    background-color: #004d00;
-}
-
-.flex-item {
-    background-color: #006622;
-    margin: 20px;
+	min-width:355px;
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 table{
@@ -19,7 +12,6 @@ table{
 	width: 100%;
 	padding: 0px;
 	border-spacing: 0px;
-    #border-collapse: separate;
 }
 
 th{
@@ -27,6 +19,109 @@ th{
 	padding: 10px;
 	background-color: #006622;
 	border: #004d00 solid 1px;
+}
+
+#prijava_meni{
+	position: relative;
+	top: 20px;
+}
+
+nav ul {
+	font-size: 2em;
+    list-style-type: none;
+}
+
+nav .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #004d00;
+	margin: 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+nav .flex-item {
+    margin: 10px;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: gray;
+	text-decoration: none;
+}
+
+a:active{
+	color: #006622;
+}
+
+
+
+.opravilo .flex-container {
+    display: -webkit-flex;
+    display: flex;
+	display: table;
+	margin-left: 15%;
+	margin-right: 15%;
+	align-items: center;
+	justify-content: center;
+}
+
+.opravilo .flex-item {
+    margin-top: 20px;
+	background-color: white;
+}
+
+.opravilo table{
+	table-layout: fixed;
+	width: 100%;
+	border: black solid 2px;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.opravilo th{
+	padding: 5px;
+	font-weight: normal;
+	color: black;
+	background-color: white;
+	border: black solid 1px;
+}
+
+.obrazec {
+	width: 70%;
+    background-color: white;
+	padding-top: 25px;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    border: 2px solid #006622;
+	position: relative;
+	top: 25px;
+	left: 15%;
+	line-height: 150%;
+}
+
+.graf_gumbi{
+	position: relative;
+	top: 25px;
+	text-align: center;
+}
+
+#graf{
+	width: 80%;
+	position: relative;
+	top: 25px;
+	left: 10%;
+	border: 2px solid #004d00;
+	background-color: white;
 }
 
 h1 {
@@ -45,111 +140,61 @@ h2 {
 	font-weight: bold; 
 }
 
-nav{
-	font-size: 2em;
+.gumb {
+    border-radius: 5px;
+    margin-top:5px;
+    background-color: white;
+    color: black;
+    border: 2px solid #006622;
+    padding:8px;
+}
+.gumb:hover {
+    background-color: #006622;
+    color: white;
 }
 
-ul {
-    list-style-type: none;
-
+footer {
+	position: absolute;
+	bottom: 0;
+	color: #006622;
 }
 
-
-
-
-a:link{
-	color: white;
-	text-decoration: none;
-}
-a:visited{
-	color: white;
-	text-decoration: none;
-}
-a:hover{
-	color: gray;
-	text-decoration: none;
-}
-a:active{
-	color: #b3ff99;
-}
-
-
-.pod_meni{
-	table-layout: fixed;
-	width: 70%;
-	position: relative;
-	top: 10px;
-	left: 15%;
-	border: #004d00 solid 1px;
-}
-
-.opravilo{
-	table-layout: fixed;
-	width: 70%;
-	position: relative;
-	top: 15px;
-	left: 15%;
-	border: black solid 1px;
-}
-
-
-
-.pm{
-	padding: 5px;
-	font-weight: normal;
+@media screen  
+  and (max-height: 800px) and (max-width: 1200px) {
+	  
+	body{
+		direction: ltr;
+	}
+	nav ul {
+		font-size: 1em;
+	}
+	
+	footer{
+		display:none;
+	}
 	
 }
+@media screen  
+  and (max-height: 640px) and (max-width: 560px)  {
 
-.o{
-	padding: 5px;
-	font-weight: normal;
-	color: black;
-	background-color: white;
+	.opravilo .flex-container {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+	.obrazec {
+		width: 100%;
+		left: 0%;
+		line-height: 100%;
+	}
+	
+	#graf{
+		width: 100%;
+		left: 0%;
+	}
+	
+	h1 {
+		font-size: 2em; 
+	}
 }
 
-.obrazec {
-	width: 70%;
-    background-color: white;
-    float: center;
-    padding-bottom: 25px;
-	padding-left: 50px;
-    border: 2px solid #006622;
-	position: relative;
-	top: 25px;
-	left: 15%;
-}
-
-
-#prijava_meni{
-	position: relative;
-	top: 20px;
-}
-
-#naslov_grafa{
-	color: black;
-	font-size: 1em;
-	text-align: center;
-	font-weight: normal; 
-}
-
-#graf{
-	width: 70%;
-	position: relative;
-	top: 15px;
-	left: 15%;
-	border: 2px solid #004d00;
-	background-color: white;
-}
-
-#registracija {
-	width: 60%;
-	position: relative;
-	top: 15px;
-	left: 20%;
-    background-color: white;
-    float: center;
-	padding-top: 25px;
-    padding-bottom: 25px;
-	padding-left: 50px;
-    border: 2px solid #006622;
-}
