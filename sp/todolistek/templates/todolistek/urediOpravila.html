@@ -1,0 +1,17 @@
+{% extends "todolistek/base.html" %}
+
+{% block main %}
+<div class="obrazec">
+<h2>Dodaj opravilo:</h2>
+	<form method="POST" action="home.html">
+		Naziv: <input type="text" required /><br />
+		Kategorija: <input type="text" required /><br />
+		Casovna zahtevnost: <input type="text" /><br />
+		Opraviti do: <input type="text" /><br />
+		Pomembnost opravila: <input type="text" /><br />
+		Dodatni opis opravila:<br />
+		<input type="text" style="width:90%;"/><br />
+		<input class="gumb" type="submit" value="Dodaj opravilo" /><br />
+	</form>
+</div>
+{% endblock %}	

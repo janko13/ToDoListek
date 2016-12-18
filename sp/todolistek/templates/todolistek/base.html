@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do Likstek</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul class="flex-container">
+				<li class="flex-item"><a href="home.html">TO DO LIKSTEK</a></li>
+			</ul>
+			<ul class="flex-container">
+				<li class="flex-item"><a href="urediOpravila.html">DODAJ OPRAVILO</a></li>
+				<li class="flex-item"><a href="grafAktivnosti.html">IZRISI GRAF AKTIVNOSTI</a></li>
+				<li class="flex-item"><a href="nastavitve.html">NASTAVITVE</a></li>
+				<li class="flex-item"><a href="prijava.html">ODJAVA</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<section class="">
+	{% block main %}
+		test123
+    {% endblock %}
+	</section>
+	<footer>
+        <p>Jan Gersak, FRI UL, 2016/2017 ©</p>
+    </footer>
+	
+</body>
+</html>

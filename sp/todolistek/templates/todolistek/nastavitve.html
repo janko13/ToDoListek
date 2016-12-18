@@ -1,0 +1,25 @@
+{% extends "todolistek/base.html" %}
+
+{% block main %}
+	<div class="obrazec">
+		<h2>Spremeni elektronski naslov</h2>
+		<form method="POST" action="home.html">
+			Nov elektronski naslov: <input type="email" placeholder="elektronski naslov" required /><br />
+			Geslo: <input type="text" placeholder="geslo" required /><br />
+			<input class="gumb" type="submit" value="Potrdi" /> <br />
+		</form>
+		<h2>Spremeni uporabnisko ime</h2> 
+		<form method="POST" action="home.html">
+			Novo uporabnisko ime: <input type="text" placeholder="novo uporabnisko ime" required /><br />
+			Geslo: <input type="text" placeholder="geslo" required /><br />
+			<input class="gumb" type="submit" value="Potrdi" /> <br />
+		</form>
+		
+		<h2>Spremeni geslo</h2>
+		<form method="POST" action="home.html">
+			Novo geslo: <input type="text" placeholder="NOVO geslo" required /><br />
+			Geslo: <input type="text" placeholder="STARO geslo" required /><br />
+			<input class="gumb" type="submit" value="Potrdi" /> <br />
+		</form>
+	</div>
+{% endblock %}

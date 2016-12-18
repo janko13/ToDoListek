@@ -1,0 +1,200 @@
+body{
+	background-color:  #b3ff99;	
+	direction: ltr;
+	min-width:355px;
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table{
+	border: #004d00 solid 3px;
+	width: 100%;
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+th{
+	color: white;
+	padding: 10px;
+	background-color: #006622;
+	border: #004d00 solid 1px;
+}
+
+#prijava_meni{
+	position: relative;
+	top: 20px;
+}
+
+nav ul {
+	font-size: 2em;
+    list-style-type: none;
+}
+
+nav .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #004d00;
+	margin: 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+nav .flex-item {
+    margin: 10px;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: gray;
+	text-decoration: none;
+}
+
+a:active{
+	color: #006622;
+}
+
+
+
+.opravilo .flex-container {
+    display: -webkit-flex;
+    display: flex;
+	display: table;
+	margin-left: 15%;
+	margin-right: 15%;
+	align-items: center;
+	justify-content: center;
+}
+
+.opravilo .flex-item {
+    margin-top: 20px;
+	background-color: white;
+}
+
+.opravilo table{
+	table-layout: fixed;
+	width: 100%;
+	border: black solid 2px;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.opravilo th{
+	padding: 5px;
+	font-weight: normal;
+	color: black;
+	background-color: white;
+	border: black solid 1px;
+}
+
+.obrazec {
+	width: 70%;
+    background-color: white;
+	padding-top: 25px;
+    padding-bottom: 25px;
+	padding-left: 50px;
+    border: 2px solid #006622;
+	position: relative;
+	top: 25px;
+	left: 15%;
+	line-height: 150%;
+}
+
+.graf_gumbi{
+	position: relative;
+	top: 25px;
+	text-align: center;
+}
+
+#graf{
+	width: 80%;
+	position: relative;
+	top: 25px;
+	left: 10%;
+	border: 2px solid #004d00;
+	background-color: white;
+}
+
+h1 {
+	color: #006622;
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold; 
+}
+
+h2 {
+	color: black;
+	display: block;
+	font-size: 1em;
+	text-align: left;
+	font-weight: bold; 
+}
+
+.gumb {
+    border-radius: 5px;
+    margin-top:5px;
+    background-color: white;
+    color: black;
+    border: 2px solid #006622;
+    padding:8px;
+}
+.gumb:hover {
+    background-color: #006622;
+    color: white;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	color: #006622;
+}
+
+@media screen  
+  and (max-height: 800px) and (max-width: 1200px) {
+	  
+	body{
+		direction: ltr;
+	}
+	nav ul {
+		font-size: 1em;
+	}
+	
+	footer{
+		display:none;
+	}
+	
+}
+@media screen  
+  and (max-height: 640px) and (max-width: 560px)  {
+
+	.opravilo .flex-container {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+	.obrazec {
+		width: 100%;
+		left: 0%;
+		line-height: 100%;
+	}
+	
+	#graf{
+		width: 100%;
+		left: 0%;
+	}
+	
+	h1 {
+		font-size: 2em; 
+	}
+}
+
