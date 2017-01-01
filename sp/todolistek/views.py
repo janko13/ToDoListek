@@ -1,14 +1,30 @@
+from django.shortcuts import render
 from django.http import HttpResponse
-from django.template import loader
-from .models import Uporabnik, Opravilo
+from django.urls import reverse
 
-def index (request):
-	vsa_opravila = Opravilo.objects.all()
-	template = loader.get_template('todolistek/index.html')
-	context = {
-		'vsa_opravila': vsa_opravila,
-	}
-	return HttpResponse(template.render(context,request))
+from django.contrib.auth.models import User
+from .models import Opravilo
+
+def home (request,user_id):
+	context = {}
+	return render(request, 'todolistek/home.html', context)
+
+def urediOpraviala (request,user_id):
+	context = {}
+	return render(request, 'todolistek/urediOpraviala.html', context)
 	
-def podrobnosti(request,opravilo_id):
-	return HttpResponse("<h1>Opravilo id "+ str(opravilo_id) +"</h1>")
+def grafAktivnosti (request,user_id):
+	context = {}
+	return render(request, 'todolistek/grafAktivnosti.html', context)
+
+def nastavitve (request,user_id):
+	context = {}
+	return render(request, 'todolistek/nastavitve.html', context)	
+	
+def prijava(request):
+	context = {}
+	return render(request, 'todolistek/prijava.html', context)
+
+def registracija(request):
+	context = {}
+	return render(request, 'todolistek/registracija.html', context)	
