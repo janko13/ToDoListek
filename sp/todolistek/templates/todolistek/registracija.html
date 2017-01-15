@@ -11,7 +11,7 @@
 	<h1>Registracija</h1>
 	
 	<div class="obrazec">
-		<form method="POST" action="prijava.html">
+		<form method="POST" action="{% url 'home' %}">
 			Uporabnisko ime: <input type="text" placeholder="uporabnisko ime" required /><br />
 			Elektronski naslov: <input type="email" placeholder="elektronski naslov" required /><br />
 			Geslo: <input type="text" placeholder="geslo" required /><br />

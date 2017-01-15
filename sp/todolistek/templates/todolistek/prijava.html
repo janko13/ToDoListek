@@ -14,14 +14,14 @@
 	<table>
 		<tr>
 		<th>
-			<form method="POST" action="home.html">
-				Uporabnisko ime:  <input id="username" type="text" required/>
-				Geslo:  <input id="password" type="password" required/> 
+			<form method="POST" action="{% url 'home' %}">
+				{% csrf_token %}
+                {{ loginForm.as_table }}
 				<input class="gumb" type="submit" value="PRIJAVA" />
 			</form>
 		</th>
 		<th>
-			<form method="POST" action="registracija.html">
+			<form method="POST" action="registracija/">
 				<input class="gumb" type="submit" value="REGISTRACIJA" />
 			</form></th>
 		</tr>

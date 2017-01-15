@@ -7,43 +7,51 @@ var dolzinaY;
 
 var ucin = [60, 40, 100, 80];
 var aktiv = [3, 4, 5, 8];
-var stanje = 0;
+
+
+var ucinkovitost_stanje = 0;
+var aktvnost_stanje = 0;
 
 function start(){
 	canvas = document.getElementById("myCanvas");
 	ctx = canvas.getContext("2d");
 	onWindowResize();
+	izrisi();
 	
 	window.addEventListener('resize', onWindowResize, false);
 	
 	document.getElementById('Aktivnosti').onclick = function () {
-		stanje = 1;
-        aktivnosti();
+		aktvnost_stanje = (aktvnost_stanje + 1) % 2;
+        izrisi();
     };
 	
 	document.getElementById('Ucinkovitost').onclick = function () {
-		stanje = 2;
-        ucinkovitost();
+		ucinkovitost_stanje = (ucinkovitost_stanje + 1) % 2;
+        izrisi();
     };
 
 }
 
 function onWindowResize() {
-
 	canvas.width = window.innerWidth*3/4;
+	
+	if(canvas.width>900)canvas.width=900;
+	
 	canvas.height = window.innerHeight/2;
 	sredinaX = canvas.width/2;
     sredinaY = canvas.height/2;
 	dolzinaX = canvas.width;
-    dolzinaY = canvas.height;
+    dolzinaY = canvas.height;	
+}
+
+function izrisi(){		
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	narisiOgrodje();
 	
-	if(stanje==0){
-		narisiOgrodje();
-	}
-	if(stanje==1){
+	if(aktvnost_stanje==1){
 		aktivnosti();
 	}
-	else{
+	if(ucinkovitost_stanje==1){
 		ucinkovitost();
 	}
 	
@@ -70,8 +78,6 @@ function narisiOgrodje(){
 }
 
 function aktivnosti(){
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	narisiOgrodje();
 	ctx.lineWidth="2";
 	ctx.strokeStyle="red";
 	
@@ -87,8 +93,6 @@ function aktivnosti(){
 }
 
 function ucinkovitost(){
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	narisiOgrodje();
 	ctx.lineWidth="2";
 	ctx.strokeStyle="blue";
 	

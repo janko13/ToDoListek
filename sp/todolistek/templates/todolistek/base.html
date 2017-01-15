@@ -11,13 +11,13 @@
 	<header>
 		<nav>
 			<ul class="flex-container">
-				<li class="flex-item"><a href="home.html">TO DO LIKSTEK</a></li>
+				<li class="flex-item"><a href="{% url 'home' %}">TO DO LIKSTEK</a></li>
 			</ul>
 			<ul class="flex-container">
 				<li class="flex-item"><a href="{% url 'urediOpraviala' %}">DODAJ OPRAVILO</a></li>
-				<li class="flex-item"><a href="grafAktivnosti.html">IZRISI GRAF AKTIVNOSTI</a></li>
-				<li class="flex-item"><a href="nastavitve.html">NASTAVITVE</a></li>
-				<li class="flex-item"><a href="prijava.html">ODJAVA</a></li>
+				<li class="flex-item"><a href="{% url 'grafAktivnosti' %}">IZRISI GRAF AKTIVNOSTI</a></li>
+				<li class="flex-item"><a href="{% url 'nastavitve' %}">NASTAVITVE</a></li>
+				<li class="flex-item"><a href="{% url 'prijava' %}">ODJAVA</a></li>
 
 			</ul>
 		</nav>
